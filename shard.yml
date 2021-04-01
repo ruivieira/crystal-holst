@@ -1,13 +1,16 @@
-name: template
+name: holst
 version: 0.1.0
 
-# authors:
-#   - name <email@example.com>
+authors:
+  - Rui Vieira <ruidevieira@googlemail.com>
 
-# description: |
-#   Short description of template
+description: |
+  A parser for Jupyter notebooks
 
-# dependencies:
+dependencies:
+  json_mapping:
+    github: crystal-lang/json_mapping.cr
+
 #   pg:
 #     github: will/crystal-pg
 #     version: "~> 0.5"
@@ -16,4 +19,4 @@ version: 0.1.0
 #   webmock:
 #     github: manastech/webmock.cr
 
-# license: MIT
+license: AGPL3

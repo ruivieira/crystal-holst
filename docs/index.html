@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="generator" content="Crystal Docs 0.36.1" />
+    <meta name="crystal_docs.project_version" content="rui-29-dev" />
+    <meta name="crystal_docs.project_name" content="holst" />
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/doc.js"></script>
+
+    <meta name="repository-name" content="holst" />
+    <title>holst rui-29-dev</title>
+    <script type="text/javascript">
+      CrystalDocs.base_path = "";
+    </script>
+  </head>
+  <body>
+    <svg class="hidden">
+      <symbol id="octicon-link" viewBox="0 0 16 16">
+        <path
+          fill-rule="evenodd"
+          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+        ></path>
+      </symbol>
+    </svg>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div class="search-box">
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Search..."
+            spellcheck="false"
+            aria-label="Search"
+          />
+        </div>
+
+        <div class="project-summary">
+          <h1 class="project-name">
+            <a href="index.html"> holst </a>
+          </h1>
+
+          <span class="project-version"> rui-29-dev </span>
+        </div>
+      </div>
+
+      <div class="search-results hidden">
+        <ul class="search-list"></ul>
+      </div>
+
+      <div class="types-list">
+        <ul>
+          <li class="parent" data-id="holst/Holst" data-name="holst">
+            <a href="Holst.html">Holst</a>
+
+            <ul>
+              <li
+                class=" "
+                data-id="holst/Holst/CellType"
+                data-name="holst::celltype"
+              >
+                <a href="Holst/CellType.html">CellType</a>
+              </li>
+
+              <li
+                class=" "
+                data-id="holst/Holst/JupyterCell"
+                data-name="holst::jupytercell"
+              >
+                <a href="Holst/JupyterCell.html">JupyterCell</a>
+              </li>
+
+              <li
+                class=" "
+                data-id="holst/Holst/JupyterFile"
+                data-name="holst::jupyterfile"
+              >
+                <a href="Holst/JupyterFile.html">JupyterFile</a>
+              </li>
+
+              <li
+                class=" "
+                data-id="holst/Holst/JupyterMetadata"
+                data-name="holst::jupytermetadata"
+              >
+                <a href="Holst/JupyterMetadata.html">JupyterMetadata</a>
+              </li>
+
+              <li
+                class=" "
+                data-id="holst/Holst/JupyterSource"
+                data-name="holst::jupytersource"
+              >
+                <a href="Holst/JupyterSource.html">JupyterSource</a>
+              </li>
+
+              <li
+                class=" "
+                data-id="holst/Holst/KernelSpec"
+                data-name="holst::kernelspec"
+              >
+                <a href="Holst/KernelSpec.html">KernelSpec</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h1>
+        <a id="holst" class="anchor" href="#holst">
+          <svg class="octicon-link" aria-hidden="true">
+            <use href="#octicon-link" />
+          </svg> </a
+        >holst
+      </h1>
+
+      <p><img src="./holst.png" alt="" /></p>
+
+      <p>A parser for Jupyter notebooks.</p>
+
+      <h2>
+        <a id="installation" class="anchor" href="#installation">
+          <svg class="octicon-link" aria-hidden="true">
+            <use href="#octicon-link" />
+          </svg> </a
+        >installation
+      </h2>
+
+      <p>Add the dependency to your <code>shard.yml</code>:</p>
+
+      <pre><code class="language-yaml">dependencies:
+  holst:
+    github: ruivieira/crystal-holst</code></pre>
+
+      <p>and run <code>shards install</code>.</p>
+
+      <h2>
+        <a id="examples" class="anchor" href="#examples">
+          <svg class="octicon-link" aria-hidden="true">
+            <use href="#octicon-link" />
+          </svg> </a
+        >examples
+      </h2>
+
+      <p>
+        Parse a Jupyter notebook with
+        <code><a href="Holst/JupyterFile.html">Holst::JupyterFile</a></code
+        >:
+      </p>
+
+      <pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;holst&quot;</span>
+
+notebook <span class="o">=</span> <span class="t">Holst</span><span class="t">::</span><span class="t">JupyterFile</span>.<span class="k">new</span>(file_path: <span class="s">&quot;/path/to/notebook.ipynb&quot;</span>)</code></pre>
+
+      <p>Print the kernel spec and name:</p>
+
+      <pre><code class="language-crystal">notebook.content.metadata.kernelspec <span class="c"># =&gt; &quot;my-python-3.9</span>
+notebook.content.metadata.language   <span class="c"># =&gt; python</span></code></pre>
+
+      <p>
+        Get all images in a notebook. This returns an array of
+        <code>Bytes</code> that you can save directly to a file.
+      </p>
+
+      <pre><code class="language-crystal">counter <span class="o">=</span> <span class="n">1</span>
+notebook.images.each { <span class="o">|</span>img<span class="o">|</span>
+    <span class="t">File</span>.write(<span class="s">&quot;image-</span><span class="i">#{</span>i<span class="i">}</span><span class="s">.png&quot;</span>, img)
+    counter += <span class="n">1</span>
+}</code></pre>
+
+      <p>Alternatively, call <code>export_images</code> to bulk save.</p>
+
+      <pre><code class="language-crystal">notebook.export_images</code></pre>
+
+      <p>
+        By default images are save in a sub-folder <code>images</code> with
+        prefix <code>images-$counter.png</code>. You can specify other values.
+      </p>
+
+      <pre><code class="language-crystal">notebook <span class="o">=</span> <span class="t">Holst</span><span class="t">::</span><span class="t">JupyterFile</span>.<span class="k">new</span>(file_path: <span class="s">&quot;/path/to/notebook.ipynb&quot;</span>,
+    image_prefix: <span class="s">&quot;diagram&quot;</span>,
+    image_dest: <span class="s">&quot;/some/other/path&quot;</span>)</code></pre>
+
+      <p>
+        will save images as <code>/some/other/path/diagram-1.png</code>,
+        <code>/some/other/path/diagram-2.png</code>, etc.
+      </p>
+
+      <h2>
+        <a id="compatibility" class="anchor" href="#compatibility">
+          <svg class="octicon-link" aria-hidden="true">
+            <use href="#octicon-link" />
+          </svg> </a
+        >compatibility
+      </h2>
+
+      <p><code>holst</code> works with Jupyter notebooks with format 4+.</p>
+
+      <h2>
+        <a id="documentation" class="anchor" href="#documentation">
+          <svg class="octicon-link" aria-hidden="true">
+            <use href="#octicon-link" />
+          </svg> </a
+        >documentation
+      </h2>
+
+      <p>
+        API documentation is available
+        <a href="https://ruivieira.github.io/crystal-holst">here</a>.
+      </p>
+
+      <p>
+        A git mirror is available at
+        <a href="https://git.sr.ht/~ruivieira/crystal-holst"
+          >https://git.sr.ht/~ruivieira/crystal-holst</a
+        >.
+      </p>
+    </div>
+  </body>
+</html>
