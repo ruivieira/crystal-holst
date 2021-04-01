@@ -213,7 +213,7 @@ module Holst
           end
           # check if it has image
           if cell.has_image?
-            source += "\n[#{@image_prefix}-#{image_counter}](./images/#{@image_prefix}-#{image_counter}.png)\n"
+            source += "\n![#{@image_prefix}-#{image_counter}](./images/#{@image_prefix}-#{image_counter}.png)\n"
             image_counter += 1
           end
         end
