@@ -7,9 +7,7 @@ authors:
 description: |
   A parser for Jupyter notebooks
 
-dependencies:
-  json_mapping:
-    github: crystal-lang/json_mapping.cr
+# dependencies:
 
 #   pg:
 #     github: will/crystal-pg
