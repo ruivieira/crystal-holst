@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.36.1">
+<meta name="crystal_docs.project_version" content="rui-29-dev">
+<meta name="crystal_docs.project_name" content="holst">
+
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+  <meta name="repository-name" content="holst">
+  <title>Holst::JupyterFile - holst rui-29-dev</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          holst
+        </a>
+      </h1>
+
+      <span class="project-version">
+        rui-29-dev
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="holst/Holst" data-name="holst">
+      <a href="../Holst.html">Holst</a>
+      
+        <ul>
+  
+  <li class=" " data-id="holst/Holst/CellType" data-name="holst::celltype">
+      <a href="../Holst/CellType.html">CellType</a>
+      
+    </li>
+  
+  <li class=" " data-id="holst/Holst/JupyterCell" data-name="holst::jupytercell">
+      <a href="../Holst/JupyterCell.html">JupyterCell</a>
+      
+    </li>
+  
+  <li class=" current" data-id="holst/Holst/JupyterFile" data-name="holst::jupyterfile">
+      <a href="../Holst/JupyterFile.html">JupyterFile</a>
+      
+    </li>
+  
+  <li class=" " data-id="holst/Holst/JupyterMetadata" data-name="holst::jupytermetadata">
+      <a href="../Holst/JupyterMetadata.html">JupyterMetadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="holst/Holst/JupyterSource" data-name="holst::jupytersource">
+      <a href="../Holst/JupyterSource.html">JupyterSource</a>
+      
+    </li>
+  
+  <li class=" " data-id="holst/Holst/KernelSpec" data-name="holst::kernelspec">
+      <a href="../Holst/KernelSpec.html">KernelSpec</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Holst::JupyterFile
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Holst/JupyterFile.html">Holst::JupyterFile</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>Representation of a Jupyter notebook</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      holst.cr
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new(file_path:String,image_prefix=&quot;image&quot;,image_dest=&quot;images&quot;)-class-method" class="signature"><strong>.new</strong>(file_path : String, image_prefix = <span class="s">&quot;image&quot;</span>, image_dest = <span class="s">&quot;images&quot;</span>)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#cells:Array(JupyterCell)-instance-method" class="signature"><strong>#cells</strong> : Array(JupyterCell)</a>
+        
+          <div class="summary"><p>Returns all the cells in this notebook as an <code>Array(<a href="../Holst/JupyterCell.html">JupyterCell</a>)</code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#content:JupyterSource-instance-method" class="signature"><strong>#content</strong> : JupyterSource</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#export_images-instance-method" class="signature"><strong>#export_images</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#has_images?:Bool-instance-method" class="signature"><strong>#has_images?</strong> : Bool</a>
+        
+          <div class="summary"><p>Return whether this notebook as images or not.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#images:Array(Bytes)-instance-method" class="signature"><strong>#images</strong> : Array(Bytes)</a>
+        
+          <div class="summary"><p>Get all images contained in this notebook.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#metadata:JupyterMetadata-instance-method" class="signature"><strong>#metadata</strong> : JupyterMetadata</a>
+        
+          <div class="summary"><p>Get the notebook's metadata as a <code><a href="../Holst/JupyterMetadata.html">JupyterMetadata</a></code></p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_markdown:String-instance-method" class="signature"><strong>#to_markdown</strong> : String</a>
+        
+          <div class="summary"><p>Return a markdown rendering of this notebook.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new(file_path:String,image_prefix=&quot;image&quot;,image_dest=&quot;images&quot;)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(file_path : String, image_prefix = <span class="s">&quot;image&quot;</span>, image_dest = <span class="s">&quot;images&quot;</span>)
+
+        <a class="method-permalink" href="#new(file_path:String,image_prefix=&quot;image&quot;,image_dest=&quot;images&quot;)-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="cells:Array(JupyterCell)-instance-method">
+      <div class="signature">
+        
+        def <strong>cells</strong> : Array(<a href="../Holst/JupyterCell.html">JupyterCell</a>)
+
+        <a class="method-permalink" href="#cells:Array(JupyterCell)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns all the cells in this notebook as an <code>Array(<a href="../Holst/JupyterCell.html">JupyterCell</a>)</code>.
+Example:</p>
+
+<pre><code class="language-crystal">notebook.cells.size <span class="c"># =&gt; 28</span>
+notebook.cells.each { <span class="o">|</span>cell<span class="o">|</span> puts(cell) }</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="content:JupyterSource-instance-method">
+      <div class="signature">
+        
+        def <strong>content</strong> : <a href="../Holst/JupyterSource.html">JupyterSource</a>
+
+        <a class="method-permalink" href="#content:JupyterSource-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="export_images-instance-method">
+      <div class="signature">
+        
+        def <strong>export_images</strong>
+
+        <a class="method-permalink" href="#export_images-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="has_images?:Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>has_images?</strong> : Bool
+
+        <a class="method-permalink" href="#has_images?:Bool-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return whether this notebook as images or not.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="images:Array(Bytes)-instance-method">
+      <div class="signature">
+        
+        def <strong>images</strong> : Array(Bytes)
+
+        <a class="method-permalink" href="#images:Array(Bytes)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Get all images contained in this notebook.
+Images are returned as an array of <code>Bytes</code>.</p>
+
+<p>Example:</p>
+
+<pre><code class="language-crystal">i <span class="o">=</span> <span class="n">1</span>
+notebook.images.each { <span class="o">|</span>img<span class="o">|</span>
+  <span class="t">File</span>.write(<span class="s">&quot;image-</span><span class="i">#{</span>i<span class="i">}</span><span class="s">.png&quot;</span>, img)
+  i += <span class="n">1</span>
+}</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="metadata:JupyterMetadata-instance-method">
+      <div class="signature">
+        
+        def <strong>metadata</strong> : <a href="../Holst/JupyterMetadata.html">JupyterMetadata</a>
+
+        <a class="method-permalink" href="#metadata:JupyterMetadata-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Get the notebook's metadata as a <code><a href="../Holst/JupyterMetadata.html">JupyterMetadata</a></code></p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_markdown:String-instance-method">
+      <div class="signature">
+        
+        def <strong>to_markdown</strong> : String
+
+        <a class="method-permalink" href="#to_markdown:String-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return a markdown rendering of this notebook.
+Code cells are rendered as code blocks.
+Images are rendered as a link.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
